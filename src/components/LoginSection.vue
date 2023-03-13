@@ -88,9 +88,9 @@ export default {
       let m_title = this.movie_title;
       console.log(m_title)
       
-      this.$axios.get('https://openapi.naver.com/').
+      this.$axios.get('http://www.omdbapi.com/?apiKey=fdff1a6d&s=friends&type=movie').
       then((res) => {
-        console.log(res)
+        console.log(res.data)
       })
 
     },
